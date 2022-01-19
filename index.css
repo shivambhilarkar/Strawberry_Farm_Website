@@ -1,0 +1,275 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  scroll-behavior: smooth;
+  transition: 5s;
+  height: 100%;
+  margin: 0px;
+}
+body {
+  height: 100%;
+  margin: 0px;
+  background-color: antiquewhite;
+}
+
+nav {
+  border: 2px solid black;
+  background: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+nav label {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  margin-left: 5px;
+}
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+}
+nav ul li {
+  display: inline;
+  list-style: none;
+  margin: auto 20px;
+  background: red;
+  padding: 5px;
+  border-radius: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* HOme container */
+
+#home_container {
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  /* margin-top: 50px; */
+  height: 80%;
+}
+#home_container .home_container_left {
+  width: 50%;
+  /* border: 2px solid black; */
+}
+#home_container .home_container_left .biglogo {
+  width: 100%;
+}
+#home_container .home_container_right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+  height: 80%;
+  margin: auto auto;
+  text-align: center;
+  background: url(./Images/redspash.png) no-repeat;
+  background-size: contain;
+}
+#home_container .home_container_right .heading {
+  padding: 0px;
+  font-size: 120px;
+  text-shadow: 5px 5px rgb(255, 255, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/* slogan section */
+.slogan {
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  background-color: rgba(128, 128, 128, 0.418);
+  box-shadow: 5px 5px 35px rgb(68, 68, 68);
+
+  width: 90%;
+  margin: 150px auto;
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.slogan .single_slogan {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slogan .single_slogan hr {
+  width: 50%;
+  height: 15px;
+  background-color: red;
+  border-radius: 15px;
+  margin: 20px;
+}
+.slogan .single_slogan h1 {
+  font-size: 50px;
+}
+.slogan .single_slogan p {
+  font-size: 20px;
+}
+
+/* farm container */
+
+.farm {
+  /* border: 2px solid black; */
+}
+.farm .allfarm {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.farm h1 {
+  text-align: center;
+  font-size: 45px;
+  text-shadow: 2px 2px rgb(0, 204, 255);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+.farm .allfarm .single_farm {
+  width: 45%;
+}
+.farm .allfarm .single_farm img {
+  width: 100%;
+  height: 450px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 35px rgb(68, 68, 68);
+}
+
+/* fruit container */
+
+#fruit_container {
+  /* border: 2px solid green; */
+  margin-top: 100px;
+}
+#fruit_container .fruit_header {
+  text-align: center;
+  font-size: 60px;
+  margin: 0px;
+  padding: 0px;
+  font-family: monospace;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-shadow: 4px 4px rgb(0, 204, 255);
+}
+#fruit_container .all_fruits {
+  /* border: 2px solid black; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#fruit_container .all_fruits .single_fruit {
+  /* border: 2px solid rgba(143, 143, 143, 0.747); */
+  width: 25%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 5px 5px 15px rgb(97, 97, 97);
+  background-color: white;
+  cursor: pointer;
+}
+#fruit_container .all_fruits .single_fruit:hover {
+  box-shadow: 10px 10px 35px rgb(34, 34, 34);
+}
+#fruit_container .all_fruits .single_fruit img {
+  width: 100%;
+  height: auto;
+}
+#fruit_container .all_fruits .single_fruit h3 {
+  text-align: center;
+  /* border: 2px solid black; */
+  font-size: 40px;
+  margin-top: auto;
+  font-family: monospace;
+  border-radius: 20px;
+  background: red;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Contact sections */
+
+#contact_container {
+  /* border: 1px solid black; */
+  margin: 0px;
+  padding: 0px;
+  background: rgba(0, 217, 255, 0.288);
+  color: rgb(0, 0, 0);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 50px;
+  display: flex;
+  height: 180px;
+  /* background: url(./Images/greenfooter.png); */
+  background-image: url(./Images/greenfooter.png);
+  background-size: contain;
+  box-shadow: 5px 5px 35px rgba(66, 66, 66, 0.87);
+}
+#contact_container .contact_left {
+  width: 20%;
+}
+#contact_container .contact_header h3 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px;
+  margin: 10px;
+
+  font-family: monospace;
+}
+#contact_container .all_contacts {
+  display: flex;
+  justify-content: space-around;
+}
+#contact_container .all_contacts .single_contact {
+  width: 20%;
+}
+#contact_container .all_contacts .single_contact img {
+  width: 100%;
+}
+#contact_container .contact_right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid black; */
+  margin-left: auto;
+  margin-right: 50px;
+}
+#contact_container .mid {
+  /* border: 2px solid black; */
+  width: 60%;
+  margin: auto auto;
+  height: 100%;
+  display: flex;
+  margin-left: auto;
+}
+#contact_container .mid img {
+  /* width: 100%; */
+  height: 100%;
+  margin-left: auto;
+  /* border: 2px solid red; */
+}
